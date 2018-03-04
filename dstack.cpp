@@ -35,13 +35,13 @@ bool Dstack::pop (double &value){
         }
         if (top->m_next==NULL){
                 
-                Node*temp=top;
-                value=temp->m_value;
-                top=temp->m_next;
+                Node*temp = top;
+                value = temp->m_value;
+                top = temp->m_next;
                 delete temp;
                 return true;
         }
-        Node *temp=top;
+        Node *temp = top;
         value = temp->m_value;
         top = temp ->m_next;
         delete temp;
@@ -60,10 +60,10 @@ int Dstack::size(){
         {
                 return num;
         }
-        Node *ptr=top;
+        Node *ptr = top;
         while (ptr!=NULL)
         {
-                ptr=ptr->m_next;
+                ptr = ptr->m_next;
                 num++;
         }
         return num;
