@@ -10,20 +10,19 @@ using namespace std;
 int main(){
     
     double input;
-    Dstack stack;
+    Dstack collec;
 
     while (cin >> input){
         
-      stack.push(input);
+      collec.push(input);
     }
-    cout << "There are " << stack.size() << " numbers in the stack." << endl;
+    cout << "There are " << collec.size() << " numbers in the stack." << endl;
     
-    while (stack.pop(value)){
+    while (collec.pop(input)){
         
-      cout << value << endl;
+      cout << input << endl;
     } 
 
-    cout << "There are " << stack.size() << " numbers in the stack." << endl;
-
+    cout << "There are " << collec.size() << " numbers in the stack." << endl;
     return 0;
 }
